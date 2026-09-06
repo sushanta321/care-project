@@ -9,7 +9,7 @@ test('register as a provider', async({page})=>{
 const offercare=page.getByRole('button',{name:'Offer care'});
 await expect(offercare).toBeVisible();
 await offercare.click();
-await page.waitForTimeout(5000)
+//await page.waitForTimeout(5000)
 
 const fullname= page.locator('.input').first();
 //await expect(fullname).toBeVisible();
@@ -35,7 +35,7 @@ await password.fill('Sushanta@123');
 const createaccount_button=page.getByRole('button',{name:'Create account'});
 //await expect(createaccount_button).toBeVisible();
 await createaccount_button.click();
-await page.waitForTimeout(5000)
+//await page.waitForTimeout(5000)
 })
 
 
@@ -57,6 +57,6 @@ test('sign in as a provider',async({page})=>{
 
     await page.getByRole('button',{name:'Sign in'}).click();
 
-    await page.waitForTimeout(5000)
+    //await page.waitForTimeout(5000)
     
 })
