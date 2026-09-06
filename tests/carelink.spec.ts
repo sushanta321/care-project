@@ -40,7 +40,7 @@ await page.waitForTimeout(5000)
 
 
 
-test.only('sign in as a provider',async({page})=>{
+test('sign in as a provider',async({page})=>{
     await page.goto('https://carelink-fh4o.onrender.com/');
     const signin= page.getByRole('link',{name:'Sign in'});
     await expect (signin).toBeVisible();
