@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/sushanta321/care-project/tree/main'
+                    url: 'https://github.com/sushanta321/care-project'
             }
         }
 
